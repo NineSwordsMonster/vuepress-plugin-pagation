@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/NineSwordsMonster/vuepress-plugin-pagation.git"
+    "url": "git+ssh://git@github.com/nine-theme/vuepress-plugin-pagation.git"
   },
   "keywords": [
     "vuepress",
@@ -17,9 +17,9 @@
   "author": "wangjia_1919@163.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NineSwordsMonster/vuepress-plugin-pagation/issues"
+    "url": "https://github.com/nine-theme/vuepress-plugin-pagation/issues"
   },
-  "homepage": "https://github.com/NineSwordsMonster/vuepress-plugin-pagation#readme",
+  "homepage": "https://github.com/nine-theme/vuepress-plugin-pagation#readme",
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.4.0",
