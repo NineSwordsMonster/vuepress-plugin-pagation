@@ -1,6 +1,6 @@
 {
   "name": "@nines/vuepress-plugin-pagation",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "pagation plugin for vuepress",
   "main": "index.js",
   "scripts": {
