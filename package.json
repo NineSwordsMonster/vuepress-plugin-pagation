@@ -1,5 +1,5 @@
 {
-  "name": "@nines/vuepress-plugin-pagation",
+  "name": "@nine-theme/vuepress-plugin-pagation",
   "version": "0.0.5",
   "description": "pagation plugin for vuepress",
   "main": "index.js",
@@ -10,11 +10,14 @@
     "type": "git",
     "url": "git+ssh://git@github.com/nine-theme/vuepress-plugin-pagation.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/nine-theme"
+  },
   "keywords": [
     "vuepress",
     "pagation"
   ],
-  "author": "wangjia_1919@163.com",
+  "author": "NineSwordsMonster",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nine-theme/vuepress-plugin-pagation/issues"
