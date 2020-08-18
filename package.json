@@ -6,10 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/nine-theme/vuepress-plugin-pagation.git"
-  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/nine-theme"
   },
