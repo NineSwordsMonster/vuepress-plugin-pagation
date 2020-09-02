@@ -1,10 +1,11 @@
-# @nines/vuepress-plugin-pagation
-![GitHub last commit](https://img.shields.io/github/last-commit/NineSwordsMonster/vuepress-plugin-pagation)
+# vuepress-theme-nine
 
-![NPM](https://img.shields.io/npm/l/@nines/vuepress-plugin-pagation)
-![npm (scoped)](https://img.shields.io/npm/v/@nines/vuepress-plugin-pagation)
-![npm](https://img.shields.io/npm/dt/@nines/vuepress-plugin-pagation)
+![GitHub last commit](https://img.shields.io/github/last-commit/nine-theme/vuepress-plugin-pagation) 
+![npm (scoped)](https://img.shields.io/npm/v/@nine-theme/vuepress-plugin-pagation) 
+![npm](https://img.shields.io/npm/dt/@nine-theme/vuepress-plugin-pagation) 
+![NPM](https://img.shields.io/npm/l/@nine-theme/vuepress-plugin-pagation)
 
+---
 > Pagation plugin for vuepress
 
 ## 使用
