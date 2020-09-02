@@ -1,4 +1,4 @@
-# vuepress-theme-nine
+# @nine-theme/vuepress-theme-nine
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/nine-theme/vuepress-plugin-pagation) 
 ![npm (scoped)](https://img.shields.io/npm/v/@nine-theme/vuepress-plugin-pagation) 
@@ -12,11 +12,11 @@
 
 |使用位置|值|
 |-|-|
-|plugin name|@nines/vuepress-plugin-pagationa|
+|plugin name|@nine-theme/vuepress-plugin-pagationa|
 |component name|Pagation（主题开发时使用）|
 
 ```sh
-npm install @nines/vuepress-plugin-pagationa
+npm install @nine-theme/vuepress-plugin-pagationa
 ```
 
 ## 参数
