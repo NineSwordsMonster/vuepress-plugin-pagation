@@ -38,16 +38,16 @@ export default function pagationLocales (ctx) {
   if (pagation) {
     return pagation
   }
-  if (/^zh\-(CN|SG)$/.test($lang)) {
+  if (/^zh-(CN|SG)$/.test($lang)) {
     return zhHans
   }
-  if (/^zh\-(HK|MO|TW)$/.test($lang)) {
+  if (/^zh-(HK|MO|TW)$/.test($lang)) {
     return zhHant
   }
-  if (/^ja\-JP$/.test($lang)) {
+  if (/^ja-JP$/.test($lang)) {
     return ja
   }
-  if (/^ko\-KR$/.test($lang)) {
+  if (/^ko-KR$/.test($lang)) {
     return ko
   }
   return en

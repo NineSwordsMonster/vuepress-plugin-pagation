@@ -156,7 +156,7 @@ export default {
       alert(`请输入大于0，并且小于${this.pages}的页码！`)
     },
     emit (id) {
-      this.$emit('getCurrentPage', id)
+      this.$emit('get-current-page', id)
     }
   }
 }

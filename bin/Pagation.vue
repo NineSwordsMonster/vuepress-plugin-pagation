@@ -1,42 +1,56 @@
 <template>
-  <div class="pagation" v-show="show">
+  <div
+    v-show="show"
+    class="pagation"
+  >
     <div class="pagation-list">
       <span
-        class="jump"
         v-show="currentPage > 1"
+        class="jump"
+        unselectable="on"
         @click="goPrev"
-        unselectable="on">{{pagationLocales.prev}}</span>
+      >{{ pagationLocales.prev }}</span>
       <span
         v-show="efont"
         class="jump"
-        @click="jumpPage(1)">1</span>
+        @click="jumpPage(1)"
+      >1</span>
       <span
+        v-show="efont"
         class="ellipsis"
-        v-show="efont">...</span>
+      >...</span>
       <span
-        class="jump"
         v-for="num in indexs"
         :key="num"
+        class="jump"
         :class="{bgprimary:currentPage==num}"
-        @click="jumpPage(num)">{{num}}</span>
+        @click="jumpPage(num)"
+      >{{ num }}</span>
       <span
+        v-show="efont&&currentPage<pages-4"
         class="ellipsis"
-        v-show="efont&&currentPage<pages-4">...</span>
+      >...</span>
       <span
         v-show="efont&&currentPage<pages-4"
         class="jump"
-        @click="jumpPage(pages)">{{pages}}</span>
+        @click="jumpPage(pages)"
+      >{{ pages }}</span>
       <span
-        class="jump"
         v-show="currentPage < pages"
-        @click="goNext">{{pagationLocales.next}}</span>
-      <span class="jumppoint">{{pagationLocales.jump}}</span>
+        class="jump"
+        @click="goNext"
+      >{{ pagationLocales.next }}</span>
+      <span class="jumppoint">{{ pagationLocales.jump }}</span>
       <span class="jumpinp">
-        <input type="text" v-model="changePage">
+        <input
+          v-model="changePage"
+          type="text"
+        >
       </span>
       <span
         class="jump gobtn"
-        @click="jumpPage(changePage)">{{pagationLocales.go}}</span>
+        @click="jumpPage(changePage)"
+      >{{ pagationLocales.go }}</span>
     </div>
   </div>
 </template>
@@ -44,11 +58,6 @@
 <script>
 import pagationLocales from './locales'
 export default {
-  data () {
-    return {
-      changePage: '' // 跳转页
-    }
-  },
   props: {
     total: {
       type: Number,
@@ -61,6 +70,12 @@ export default {
     currentPage: {
       type: Number,
       default: 1
+    }
+  },
+  emits: ['get-current-page'],
+  data () {
+    return {
+      changePage: '' // 跳转页
     }
   },
   computed: {
@@ -124,7 +139,7 @@ export default {
       alert(`请输入大于0，并且小于${this.pages}的页码！`)
     },
     emit (id) {
-      this.$emit('getCurrentPage', id)
+      this.$emit('get-current-page', id)
     }
   }
 }
