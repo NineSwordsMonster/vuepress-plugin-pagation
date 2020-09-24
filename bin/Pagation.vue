@@ -75,12 +75,15 @@ export default {
   emits: ['get-current-page'],
   data () {
     return {
-      changePage: '' // 跳转页
+      changePage: '', // 跳转页
+      /* eslint-disable no-undef */
+      pageSize: PERPAGE
     }
   },
   computed: {
     pages () {
-      return Math.ceil(this.total / this.perPage)
+      const pageSize = this.pageSize || this.perPage
+      return Math.ceil(this.total / pageSize)
     },
     show: function () {
       return this.pages && this.pages != 1
